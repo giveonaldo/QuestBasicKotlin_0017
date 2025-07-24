@@ -74,6 +74,10 @@ fun conditional() {
     }
 }
 
+fun withoutParameter(){
+    println("hello worlds")
+}
+
 fun main() {
     val contact = Contact(1, "hello@mail.com")
     // println(contact.email)
@@ -84,4 +88,5 @@ fun main() {
     contohSet()
     contohMap()
     conditional()
+    withoutParameter()
 }
