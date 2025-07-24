@@ -38,6 +38,42 @@ fun contohMap() {
     println(bentuk)
 }
 
+fun conditional() {
+    val number = 10
+    if (number > 0) {
+        println("positif number")
+    } else {
+        println("negative number")
+    }
+
+    val day: Byte = 3
+    when (day) {
+        1.toByte() -> println("sunday")
+        2.toByte() -> println("monday")
+        3.toByte() -> println("tuesday")
+        4.toByte() -> println("thursday")
+        5.toByte() -> println("friday")
+    }
+
+    val value: String = "10"
+    try {
+        val result = value.toByte()
+        println(result)
+    }
+    catch(e: NumberFormatException) {
+        println("invalid number")
+    }
+
+    val cars: List<String> = listOf("sedan", "toyota", "mitshubishi")
+    for (car in cars) {
+        println(car)
+    }
+
+    for (range in 1..10) {
+        print(range)
+    }
+}
+
 fun main() {
     val contact = Contact(1, "hello@mail.com")
     // println(contact.email)
@@ -47,4 +83,5 @@ fun main() {
     contohList()
     contohSet()
     contohMap()
+    conditional()
 }
