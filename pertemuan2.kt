@@ -74,6 +74,13 @@ fun conditional() {
     }
 }
 
+fun perulangan() {
+    var n: Byte = 1
+    do {
+        println("Perulangan ke $n")
+    } while (n <= 5)
+}
+
 fun withoutParameter(){
     println("hello worlds")
 }
@@ -127,4 +134,5 @@ fun main() {
     println({text: String -> text.uppercase()}("me"))
 
     nullSafety()
+    perulangan()
 }
