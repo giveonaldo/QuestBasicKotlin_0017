@@ -1,4 +1,5 @@
+class Contact(val id: Int, var email: String)
+
 fun main() {
-    println("Nama: Abriansyah Adam")
-    print("NIM: 20210140017")
+    val contact = Contact(1, "hello@mail.com")
 }
