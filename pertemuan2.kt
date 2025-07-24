@@ -86,6 +86,10 @@ fun withDefaultParameter(name: String = "Aldo", age: Byte) {
     println("Nama saya $name umur $age")
 }
 
+fun withReturn(panjang: Byte, lebar: Byte): Int {
+    return panjang.toInt() * lebar.toInt()
+}
+
 fun main() {
     val contact = Contact(1, "hello@mail.com")
     // println(contact.email)
@@ -99,4 +103,5 @@ fun main() {
     withoutParameter()
     withParameter("abriansyah adam")
     withDefaultParameter("Giveon", 22)
+    println(withReturn(20, 5))
 }
