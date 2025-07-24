@@ -90,11 +90,19 @@ fun withReturn(panjang: Byte, lebar: Byte): Int {
     return panjang.toInt() * lebar.toInt()
 }
 
+data class DataClass(
+    val id: Byte,
+    var name: String
+)
+
 fun main() {
     val contact = Contact(1, "hello@mail.com")
     // println(contact.email)
     contact.email = "giveonaldo@gmail.com"
     // println(contact.email)
+
+    val data = DataClass(3, "me")
+    println(data)
 
     contohList()
     contohSet()
@@ -104,4 +112,6 @@ fun main() {
     withParameter("abriansyah adam")
     withDefaultParameter("Giveon", 22)
     println(withReturn(20, 5))
+    println(data.copy())
+
 }
