@@ -95,6 +95,16 @@ data class DataClass(
     var name: String
 )
 
+fun nullSafety() {
+    var neverNull: String = "ini ga bisa null"
+    println(neverNull)
+
+    var nullable: String? = "hello worlds"
+    println(nullable)
+    nullable = null
+    println(nullable)
+}
+
 fun main() {
     val contact = Contact(1, "hello@mail.com")
     // println(contact.email)
@@ -115,4 +125,6 @@ fun main() {
     println(data.copy())
 
     println({text: String -> text.uppercase()}("me"))
+
+    nullSafety()
 }
