@@ -114,4 +114,5 @@ fun main() {
     println(withReturn(20, 5))
     println(data.copy())
 
+    println({text: String -> text.uppercase()}("me"))
 }
